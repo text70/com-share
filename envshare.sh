@@ -12,7 +12,7 @@ trap 'echo "Error: Command failed at line $LINENO"' ERR
 # Helper functions
 show_usage() {
     cat << EOF
-Usage: comshare [command] [options]
+Usage: com [command] [options]
 
 Commands:
     share       Share current environment
