@@ -29,10 +29,10 @@ ghc -threaded share.hs
 ```
 ## Make executeable
 
-chmod +x comshare.sh
+```chmod +x comshare.sh```
 
 ## Share your com
-
+```
 Usage: com [command] [options]
 
 Commands:
@@ -45,7 +45,7 @@ Options:
     -p, --port PORT    Use specific port (default: 9999)
     -t, --timeout SEC  Connection timeout (default: 5)
     -h, --help        Show this help
-
+```
 
 ## Dependencies
 
