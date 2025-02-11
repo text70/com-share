@@ -1,4 +1,4 @@
-# Env Share
+# Com Share
 
 A minimal environment variable sharing tool written in Haskell.
 
@@ -9,10 +9,10 @@ Shares environment variables between shells through a simple netcat pipe. When o
 ## Usage
 
 ```bash
-# Terminal 1 (share your env)
-env | nc localhost 9999
+# Terminal 1 (share your com)
+com | nc localhost 9999
 
-# Terminal 2 (receive the env)
+# Terminal 2 (receive the com)
 nc localhost 9999 | source
 ```
 
@@ -46,7 +46,7 @@ $ echo $PATH
 /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 $ echo $NODE_PATH
 /usr/lib/node_modules
-$ env | nc localhost 9999
+$ com | nc localhost 9999
 ```
 
 #### Developer Bob's terminal with issues
