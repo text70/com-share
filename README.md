@@ -29,10 +29,11 @@ ghc -threaded share.hs
 ```
 ## For shell scripts to make life even easier...Make executeable
 
-```chmod +x comshare.sh```
+```bash
+chmod +x comshare.sh```
 
 ## Share your com
-```
+```bash
 Usage: com [command] [options]
 
 Commands:
@@ -58,11 +59,11 @@ Options:
 ## **Example**
 ### Developer Alice's working environment   
 ### Terminal 1
-```diff-
+```bash
 $ echo $NODE_ENV
 ```
 in production
-```
+```bash
 $ echo $PATH
 /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 $ echo $NODE_PATH
@@ -72,27 +73,27 @@ $ com | nc localhost 9999
 
 #### Developer Bob's terminal with issues
 #### Terminal 2
-```
+```bash
 $ echo $NODE_ENV
 development    # <-- Different!
 $ echo $NODE_PATH
               # <-- Missing!
 ```
 ### Bob receives Alice's environment
-```
+```bash
 $ nc localhost 9999 | source
 ```
 ### Bob's environment is now identical
-```
+``` bash
 $ echo $NODE_ENV
 ```
 in production
-```
+```bash
 $ echo $NODE_PATH
 /usr/lib/node_modules
 ```
 ### Node.js app now works as expected
-```
+```bash
 $ node app.js
 Server started successfully!
 ```
