@@ -27,6 +27,25 @@ ghc -threaded share.hs
 ```bash
 ./share
 ```
+## Make executeable
+
+chmod +x comshare.sh
+
+## Share your com
+
+Usage: com [command] [options]
+
+Commands:
+    share       Share current environment
+    get         Get shared environment
+    start      Start the Haskell server
+    stop       Stop the server
+
+Options:
+    -p, --port PORT    Use specific port (default: 9999)
+    -t, --timeout SEC  Connection timeout (default: 5)
+    -h, --help        Show this help
+
 
 ## Dependencies
 
