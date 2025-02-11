@@ -58,7 +58,7 @@ Options:
 ## **Example**
 ### Developer Alice's working environment   
 ### Terminal 1
-```
+```diff-
 $ echo $NODE_ENV
 ```
 in production
