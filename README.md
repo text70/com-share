@@ -35,34 +35,44 @@ ghc -threaded share.hs
 
 
 
-```
+
 # Developer Alice's working environment
 # Terminal 1
+```
 $ echo $NODE_ENV
+```
 production
+```
 $ echo $PATH
 /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 $ echo $NODE_PATH
 /usr/lib/node_modules
 $ env | nc localhost 9999
+```
 
 # Developer Bob's terminal with issues
 # Terminal 2
+```
 $ echo $NODE_ENV
 development    # <-- Different!
 $ echo $NODE_PATH
               # <-- Missing!
-
+```
 # Bob receives Alice's environment
+```
 $ nc localhost 9999 | source
-
+```
 # Bob's environment is now identical
+```
 $ echo $NODE_ENV
+```
 production
+```
 $ echo $NODE_PATH
 /usr/lib/node_modules
-
+```
 # Node.js app now works as expected
+```
 $ node app.js
 Server started successfully!
 ```
