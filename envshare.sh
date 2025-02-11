@@ -1,5 +1,5 @@
 #!/bin/bash
-# envshare - enhanced environment sharing
+# comshare - enhanced environment sharing
 
 # Default configuration
 PORT=9999
@@ -12,7 +12,7 @@ trap 'echo "Error: Command failed at line $LINENO"' ERR
 # Helper functions
 show_usage() {
     cat << EOF
-Usage: envshare [command] [options]
+Usage: comshare [command] [options]
 
 Commands:
     share       Share current environment
@@ -57,13 +57,13 @@ stop_server() {
     fi
 }
 
-share_env() {
+share_() {
     if ! check_server; then
         echo "✗ Server not running"
         exit 1
     fi
     echo "Sharing environment..."
-    if timeout $TIMEOUT env | nc localhost $PORT; then
+    if timeout $TIMEOUT com | nc localhost $PORT; then
         echo "✓ Environment shared"
     else
         echo "✗ Share failed"
@@ -71,7 +71,7 @@ share_env() {
     fi
 }
 
-get_env() {
+get_com() {
     if ! check_server; then
         echo "✗ Server not running"
         exit 1
@@ -122,7 +122,7 @@ done
 # Execute command
 case "$COMMAND" in
     "share")
-        share_env
+        share_com
         ;;
     "get")
         get_env
