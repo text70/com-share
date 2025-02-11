@@ -34,9 +34,8 @@ ghc -threaded share.hs
 - network package
 
 
-
-##Example:
-### Developer Alice's working environment
+## **Example**
+### Developer Alice's working environment   
 ### Terminal 1
 ```
 $ echo $NODE_ENV
