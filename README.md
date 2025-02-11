@@ -96,3 +96,5 @@ $ echo $NODE_PATH
 $ node app.js
 Server started successfully!
 ```
+##Contributing
+If you would like to make a contribution to this project... Don't hesitate, message me. This place is full of snakes, and bugs and who knows what else lurking in the cod.e.                                                                                                                     🕷️
