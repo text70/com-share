@@ -27,7 +27,7 @@ ghc -threaded share.hs
 ```bash
 ./share
 ```
-## Make executeable
+## For shell scripts to make life even easier...Make executeable
 
 ```chmod +x comshare.sh```
 
