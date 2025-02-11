@@ -25,7 +25,7 @@ ghc -threaded share.hs
 ## Run server
 
 ```bash
-./share
+./share.sh
 ```
 ## For shell scripts to make life even easier...Make executeable
 
@@ -51,6 +51,8 @@ Options:
 
 - GHC (Glasgow Haskell Compiler)
 - network package
+- If you have no idea how GHC combobulation works,
+  ```chmod +x haskell_nix_build.sh && sudo ./haskell_nix_build.sh``` and then follow the directions ```y``` & ```Enter``` through the steps and you shoudl end up with an executable for the server. ```./share.sh``` when finished to run the server. 
 
 
 ## **Example**
