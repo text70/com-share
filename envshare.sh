@@ -125,7 +125,7 @@ case "$COMMAND" in
         share_com
         ;;
     "get")
-        get_env
+        get_com
         ;;
     "start")
         start_server
