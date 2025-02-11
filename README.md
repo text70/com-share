@@ -30,7 +30,8 @@ ghc -threaded share.hs
 ## For shell scripts to make life even easier...Make executeable
 
 ```bash
-chmod +x comshare.sh```
+chmod +x comshare.sh
+```
 
 ## Share your com
 ```bash
