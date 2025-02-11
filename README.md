@@ -4,7 +4,7 @@ A minimal environment variable sharing tool written in Haskell.
 
 ## What it does
 
-Shares environment variables between shells through a simple netcat pipe. When one shell sends its environment, the next connection receives it. Data exists only in memory and is destroyed after first use or 60-second timeout.
+Shares environment variables between shells through a simple netcat pipe. When one shell sends its environment, the next connection receives it. By default data exists only in memory and is destroyed after first use or 60-second timeout.
 
 ## Usage
 
