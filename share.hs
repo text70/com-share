@@ -16,9 +16,9 @@ main = do
 
 handle :: Socket -> IO ()
 handle sock = do
-    env <- recv sock 4096
-    if null env 
+    com <- recv sock 4096
+    if null com 
         then close sock
         else do
-            void $ timeout 60000000 $ send sock env
+            void $ timeout 60000000 $ send sock com
             close sock
